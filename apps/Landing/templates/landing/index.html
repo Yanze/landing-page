@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Welcome to landing page app</h1>
+
+  {% if persons %}
+  <ul>
+    {% for person in persons %}
+    <li>Name: {{person.name}}</li>
+    <li>Interest: {{person.interest}}</li>
+    <li>Favorite Languages: {{person.favo_language}}</li>
+    <br>
+    {% endfor %}
+  </ul>
+  {% endif %}
+
+
+
+</body>
+</html>
